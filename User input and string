@@ -1,0 +1,45 @@
+//User input and string
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+//Inside of C
+  char happyArray[6] = {'H', 'a', 'p', 'p', 'y', '\0'};
+/* Inside of C++
+Amazing Right? Nah/IDK
+*/
+string birthdayString = " Birthday";
+cout << happyArray + birthdayString << endl;
+// The string library class provides a string object
+string yourName;
+cout << "What is your name: ";
+getline(cin, yourName);
+
+cout << "hello" << yourName << endl;
+
+double eulersConstant = .57721;
+string eulerGuess;
+double eulerGuessDouble;
+
+cout << "What is Euler's Constant?";
+getline(cin, eulerGuess);
+
+eulerGuessDouble = stod(eulerGuess);
+
+if(eulerGuessDouble == eulersConstant){
+  cout << "You are right" << endl;
+
+} else {
+
+  cout << "Your are wrong" << endl;
+}  
+cout << "Size of string " << eulerGuess.size() << endl;
+cout << "Is string empty " << eulerGuess.empty() << endl;
+cout << eulerGuess.append(" was your guess") << endl;
+
+
+  return 0;
+}
