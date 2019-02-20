@@ -1,0 +1,40 @@
+// Practing Switch Statements
+
+#include <string>
+#include <fstream>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int salutationType = 1;
+
+  switch(salutationType){
+
+    case 1 :
+    cout << "Bonjour" << endl;
+    break;
+
+    case 2 :
+    cout << "Hola" << endl;
+    break;
+
+    case 3 :
+    cout << "Yo" << endl;
+    break;
+
+    case 4 :
+    cout << "Hi" << endl;
+    break;
+
+    case 5 :
+    cout << "Sup" << endl;
+    break;
+
+    default:
+    cout << "Hello" << endl;
+      
+  }
+return 0;
+}
