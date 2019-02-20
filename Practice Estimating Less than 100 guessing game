@@ -1,0 +1,35 @@
+#include <cstdlib>
+#include <time.h>
+#include <iostream>
+using namespace std;
+
+// \n means a space between line
+int main() {
+cout << "Welcome To Aymaan's guessing game\n";
+      srand(time(0));
+
+      int number;
+
+      number = rand() % 100 + 1;
+
+      int guesses;
+
+      do {
+
+            cout << "Enter your estimate: ";
+            cin >> guesses;
+
+            if (guesses < number)
+
+                  cout << "Your estimate is less, than the secret number" << endl;
+
+            else if (guesses > number)
+
+                  cout << "Your estimate is more, than the secret number" << endl;
+            else
+                  cout << "Your guess is right!" << endl;
+
+      } while (guesses != number);
+      system("PAUSE");
+      return 0;
+}
